@@ -166,6 +166,40 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
   .precio-grid{grid-template-columns:1fr 1fr;align-items:start}
   .o-sep{display:none}
 }
+/* Vías de ingreso */
+.vt-wrap{position:relative;padding-top:26px;margin-top:18px}
+.vt-badgewrap{position:absolute;top:0;right:0;width:86px;text-align:center}
+.vt-badge{display:inline-block;font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--gradient-hot);color:#fff;padding:4px 8px;border-radius:var(--radius-full);box-shadow:var(--shadow-sm);white-space:nowrap}
+.vt{border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);border:1px solid var(--border);font-size:12px}
+.vt-tr{display:grid;grid-template-columns:1fr 86px 86px;align-items:center;border-bottom:1px solid var(--border);background:var(--bg-card)}
+.vt-tr:last-child{border-bottom:none}
+.vt-tc{padding:12px 10px}
+.vt-tc.num{text-align:center;font-weight:700}
+.vt-tr.head{background:#1f1f1f}
+.vt-tr.head .vt-tc{font-family:'Ubuntu',Verdana,sans-serif;font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.04em}
+.vt-av{color:var(--text-secondary)}
+.vt-sm{background:var(--gradient-soft)}
+.vt-tr.head .vt-sm{background:var(--gradient-primary);color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.2)}
+.vt-tr.bloque{background:#202020}
+.vt-tr.bloque .vt-tc:first-child{font-family:'Ubuntu',Verdana,sans-serif;font-weight:700;font-size:13px}
+.vt-tr.sub .vt-tc:first-child{padding-left:22px;color:var(--text-secondary);font-size:11px}
+.vt-tr.sub .vt-tc:first-child::before{content:"↳ ";color:var(--orange)}
+.vt-gratis{color:var(--orange);font-weight:700;text-transform:uppercase;font-size:10px;letter-spacing:.05em}
+.vt-dcto{color:var(--orange);font-weight:700}
+.vt-na{color:var(--text-muted);font-weight:400}
+.vt-tr.subtotal{background:#1f1f1f}
+.vt-tr.subtotal .vt-tc{font-weight:700}
+.vt-tr.total{background:#181818}
+.vt-tr.total .vt-tc:first-child{font-family:'Ubuntu',Verdana,sans-serif;font-weight:700;font-size:13px;text-transform:uppercase}
+.vt-totav{color:#ffb84d;font-size:14px}
+.vt-totsm{font-size:15px;background:var(--gradient-primary);-webkit-background-clip:text;background-clip:text;color:transparent}
+@media (min-width:768px){
+  .vt{font-size:13px}
+  .vt-tr{grid-template-columns:1fr 130px 130px}
+  .vt-badgewrap{width:130px}
+  .vt-badge{font-size:10px;padding:4px 12px}
+  .vt-tr.sub .vt-tc:first-child{font-size:12px}
+}
 </style>
 </head>
 <body>
@@ -177,7 +211,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
     <h1>Tu propia infraestructura de prospección B2B para generar <span class="grad">conversaciones nuevas con tomadores de decisión</span>, sin fee mensual — instalada en 4 semanas y operada por tu equipo</h1>
     <p class="sub">Esto es lo que conversamos en la reunión, completo y por escrito: qué construimos dentro de tu empresa, en qué plazos, qué queda en tus manos y cuánto cuesta. Léelo con calma — la decisión la tomas tú.</p>
     <a class="btn" href="#pago">Reserva tu implementación</a>
-    <p class="btn-note">Dentro de 5 días: $1.100.000 en 2 pagos de $550.000 · IVA incluido</p>
+    <p class="btn-note">Ingreso Smart, reservando dentro de 5 días: $1.530.000 con todos los aceleradores incluidos</p>
   </div>
 </header>
 
@@ -235,9 +269,9 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
         <div class="g-row"><span class="g-label">Infraestructura técnica</span><span class="g-cell on"></span><span class="g-cell"></span><span class="g-cell"></span><span class="g-cell"></span><span class="g-cell"></span><span class="g-cell"></span></div>
         <div class="g-row"><span class="g-label">Calentamiento de casillas</span><span class="g-cell on-warm"></span><span class="g-cell on-warm"></span><span class="g-cell on-warm"></span><span class="g-cell on-warm"></span><span class="g-cell"></span><span class="g-cell"></span></div>
         <div class="g-row"><span class="g-label">Cuentas clave y decisores</span><span class="g-cell"></span><span class="g-cell on"></span><span class="g-cell"></span><span class="g-cell"></span><span class="g-cell"></span><span class="g-cell"></span></div>
-        <div class="g-row"><span class="g-label">Mensajes</span><span class="g-cell"></span><span class="g-cell"></span><span class="g-cell on"></span><span class="g-cell"></span><span class="g-cell"></span><span class="g-cell"></span></div>
-        <div class="g-row"><span class="g-label">Lanzamiento controlado</span><span class="g-cell"></span><span class="g-cell"></span><span class="g-cell"></span><span class="g-cell on"></span><span class="g-cell"></span><span class="g-cell"></span></div>
-        <div class="g-row"><span class="g-label">Acompañamiento y transferencia</span><span class="g-cell"></span><span class="g-cell"></span><span class="g-cell"></span><span class="g-cell"></span><span class="g-cell on-acc"></span><span class="g-cell on-acc"></span></div>
+        <div class="g-row"><span class="g-label">Oferta, posicionamiento y mensajería</span><span class="g-cell"></span><span class="g-cell on"></span><span class="g-cell on"></span><span class="g-cell"></span><span class="g-cell"></span><span class="g-cell"></span></div>
+        <div class="g-row"><span class="g-label">Lanzamiento controlado</span><span class="g-cell"></span><span class="g-cell"></span><span class="g-cell"></span><span class="g-cell on"></span><span class="g-cell on"></span><span class="g-cell on"></span></div>
+        <div class="g-row"><span class="g-label">Acompañamiento y transferencia</span><span class="g-cell on-acc"></span><span class="g-cell on-acc"></span><span class="g-cell on-acc"></span><span class="g-cell on-acc"></span><span class="g-cell on-acc"></span><span class="g-cell on-acc"></span></div>
         <p class="g-foot">El calentamiento corre en paralelo durante las primeras 4 semanas: es lo que garantiza que al lanzar, los correos lleguen.</p>
       </div>
 
@@ -285,7 +319,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
       </div>
 
       <div class="week card">
-        <div class="w-head"><span class="w-num">S3</span><h3>Mensajes</h3></div>
+        <div class="w-head"><span class="w-num">S3</span><h3>Oferta, posicionamiento y mensajería</h3></div>
         <ul>
           <li>Redactamos secuencias de 3 a 5 correos que tocan distintos dolores del decisor, para que si el primero no conecta, el tercero sí.</li>
           <li>Personalizamos cada correo con inteligencia artificial, para que el gerente sienta que le escribieron a él, no a una lista.</li>
@@ -315,30 +349,6 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
     </div>
   </section>
 
-  <section aria-label="Qué incluye">
-    <div class="wrap">
-      <h2>Qué incluye</h2>
-      <div class="card" style="margin-top:18px">
-        <div class="stack-item">
-          <span class="chip">Core</span>
-          <p><strong>La infraestructura completa</strong>, instalada, blindada y transferida (todo lo de arriba).</p>
-        </div>
-        <div class="stack-item">
-          <span class="chip">Bono 1</span>
-          <p><strong>Tu equipo al mando:</strong> capacitación formal para que tu gente opere bandejas, métricas, respuestas y mantención, sin depender de nadie.</p>
-        </div>
-        <div class="stack-item">
-          <span class="chip">Bono 2</span>
-          <p><strong>Biblioteca de secuencias y SOPs:</strong> scripts validados y procedimientos paso a paso para delegar la operación a un vendedor o asistente.</p>
-        </div>
-        <div class="stack-item">
-          <span class="chip">Tuyo</span>
-          <p>Las licencias (envío, datos, casillas) van a tu nombre: <strong>el activo es 100% tuyo</strong>. Rango de mercado: USD 150–250/mes. No hay fee mensual de Avanza.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section aria-label="Dónde está implementado">
     <div class="wrap">
       <h2>Ya está funcionando en empresas B2B reales</h2>
@@ -347,6 +357,39 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
         <div class="rubro">Proyectos de obras civiles</div>
         <div class="rubro">Maestranza industrial</div>
         <div class="rubro">Servicios de consultoría como el nuestro</div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-label="Qué incluye — el Core">
+    <div class="wrap">
+      <h2>Qué incluye — el Core</h2>
+      <p style="margin:8px 0 0">Todo lo que ocurre entre la Semana 1 y la Semana 6 es parte del programa. Sin letra chica.</p>
+      <div class="card" style="margin-top:18px">
+        <div class="stack-item">
+          <span class="chip">S1</span>
+          <p><strong>Infraestructura técnica</strong> — dominios dedicados, casillas, calentamiento progresivo y blindaje de entregabilidad.</p>
+        </div>
+        <div class="stack-item">
+          <span class="chip">S2</span>
+          <p><strong>Cuentas clave y decisores</strong> — perfil exacto del decisor y bases construidas y verificadas.</p>
+        </div>
+        <div class="stack-item">
+          <span class="chip">S3</span>
+          <p><strong>Oferta, posicionamiento y mensajería</strong> — secuencias personalizadas con IA que tocan los dolores del decisor.</p>
+        </div>
+        <div class="stack-item">
+          <span class="chip">S4</span>
+          <p><strong>Lanzamiento controlado</strong> — volumen creciente y respuestas integradas a tu flujo comercial.</p>
+        </div>
+        <div class="stack-item">
+          <span class="chip">S1–6</span>
+          <p><strong>Acompañamiento y transferencia</strong> — presente desde la Semana 1 hasta la 6, no solo al final: operamos contigo hasta entregarte las llaves.</p>
+        </div>
+        <div class="stack-item">
+          <span class="chip">S5–6</span>
+          <p><strong>Tu equipo al mando</strong> — capacitación formal para que tu gente opere bandejas, métricas, respuestas y mantención, sin depender de nadie.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -360,18 +403,89 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
     </div>
   </section>
 
-  <section id="pago" aria-label="Inversión y reserva">
+  <section id="pago" aria-label="Inversión">
     <div class="wrap">
-      <h2>Inversión</h2>
-      <p style="margin-top:8px">CLP, IVA incluido. Los dos pagos: al inicio y a los 30 días. La ventana de 5 días corre desde la presentación de esta propuesta.</p>
+      <h2>Inversión — vías de ingreso al programa</h2>
+      <p style="margin:8px 0 0">Dos formas de entrar. La ventana del Ingreso Smart corre desde la presentación de esta propuesta.</p>
 
+      <div class="vt-wrap">
+        <div class="vt-badgewrap"><span class="vt-badge">Recomendado</span></div>
+        <div class="vt">
+          <div class="vt-tr head">
+            <div class="vt-tc">Detalle del programa</div>
+            <div class="vt-tc num vt-av">Avanza</div>
+            <div class="vt-tc num vt-sm">Smart</div>
+          </div>
+          <div class="vt-tr bloque">
+            <div class="vt-tc">Core — Infraestructura de Prospección B2B con IA (Semanas 1 a 6)</div>
+            <div class="vt-tc num vt-av">$1.800.000</div>
+            <div class="vt-tc num vt-sm">$1.800.000</div>
+          </div>
+          <div class="vt-tr">
+            <div class="vt-tc">Descuento por ingreso temprano (15%, reservando dentro de 5 días)</div>
+            <div class="vt-tc num vt-av vt-na">No aplica</div>
+            <div class="vt-tc num vt-sm vt-dcto">− $270.000</div>
+          </div>
+          <div class="vt-tr subtotal">
+            <div class="vt-tc">Inversión Core</div>
+            <div class="vt-tc num vt-av">$1.800.000</div>
+            <div class="vt-tc num vt-sm">$1.530.000</div>
+          </div>
+          <div class="vt-tr bloque">
+            <div class="vt-tc">Inversión Aceleradores de rendimiento</div>
+            <div class="vt-tc num vt-av"></div>
+            <div class="vt-tc num vt-sm"></div>
+          </div>
+          <div class="vt-tr sub">
+            <div class="vt-tc">Implementación técnica armada por Avanza contigo (Semana 1 hecha en conjunto, no solo guiada)</div>
+            <div class="vt-tc num vt-av">$400.000</div>
+            <div class="vt-tc num vt-sm vt-gratis">Gratis</div>
+          </div>
+          <div class="vt-tr sub">
+            <div class="vt-tc">Implementación de CRM para gestión comercial</div>
+            <div class="vt-tc num vt-av">$600.000</div>
+            <div class="vt-tc num vt-sm vt-gratis">Gratis</div>
+          </div>
+          <div class="vt-tr sub">
+            <div class="vt-tc">Secuencias de automatización avanzadas para gestión de prospectos en el CRM</div>
+            <div class="vt-tc num vt-av">$250.000</div>
+            <div class="vt-tc num vt-sm vt-gratis">Gratis</div>
+          </div>
+          <div class="vt-tr sub">
+            <div class="vt-tc">Biblioteca de secuencias y procedimientos estándar para delegar la operación</div>
+            <div class="vt-tc num vt-av">$200.000</div>
+            <div class="vt-tc num vt-sm vt-gratis">Gratis</div>
+          </div>
+          <div class="vt-tr sub">
+            <div class="vt-tc">Skill de correos de venta para ChatGPT</div>
+            <div class="vt-tc num vt-av">$119.000</div>
+            <div class="vt-tc num vt-sm vt-gratis">Gratis</div>
+          </div>
+          <div class="vt-tr sub">
+            <div class="vt-tc">Skill de correos de venta para Claude</div>
+            <div class="vt-tc num vt-av">$119.000</div>
+            <div class="vt-tc num vt-sm vt-gratis">Gratis</div>
+          </div>
+          <div class="vt-tr total">
+            <div class="vt-tc">Inversión total</div>
+            <div class="vt-tc num vt-av vt-totav">$3.488.000</div>
+            <div class="vt-tc num vt-sm"><span class="vt-totsm">$1.530.000</span></div>
+          </div>
+        </div>
+      </div>
+      <p class="g-foot" style="margin-top:12px">Valores CLP, IVA incluido. Ingreso Avanza: 2 pagos de $900.000 (al inicio y a los 30 días). Ingreso Smart: 2 pagos de $765.000, o tarjeta de crédito.</p>
+
+      <div class="card" style="margin-top:28px">
+        <h3>Costo operativo aparte: tus licencias</h3>
+        <p style="margin-top:10px">Las licencias (envío, datos, casillas) van a tu nombre: <strong>el activo es 100% tuyo</strong>. Rango de mercado: USD 150–250/mes, pagadas directo por ti. No hay fee mensual de Avanza.</p>
+      </div>
+
+      <h2 style="margin-top:44px">Cómo reservar</h2>
       <div class="precio-grid">
         <div class="p-card destacada">
-          <span class="p-badge">Ingresando hasta 5 días post implementación</span>
-          <p class="p-label">Opción 1 — Reservando dentro de los primeros 5 días</p>
-          <p class="p-monto" style="font-size:clamp(22px, 5.5vw, 28px)">2 pagos de $550.000 <small>IVA incluido</small></p>
-          <p class="p-det">Total de $1.100.000 · Transferencia bancaria</p>
-          <span class="p-ahorro">Ahorras $300.000</span>
+          <span class="p-badge">Transferencia</span>
+          <p class="p-label">Transferencia bancaria</p>
+          <p class="p-det"><strong>Ingreso Smart</strong> (dentro de 5 días): 2 pagos de <strong>$765.000</strong>.<br><strong>Ingreso Avanza:</strong> 2 pagos de <strong>$900.000</strong>.</p>
           <div class="banco">
             <dl>
               <dt>Titular</dt><dd>ASTIC SpA</dd>
@@ -383,16 +497,12 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
             </dl>
             <button class="copy-btn" type="button" id="copiarDatos">Copiar datos de transferencia</button>
           </div>
+          <p class="p-det" style="margin-top:12px;font-size:12px;color:var(--text-muted)">* ¿Prefieres pagar el Ingreso Smart con tarjeta? Pídenos tu link de pago Flow y te lo enviamos al momento.</p>
         </div>
-
-        <p class="o-sep">· Pasados los 5 días ·</p>
-
         <div class="p-card">
-          <p class="p-label">Opción 2 — Pasados los 5 días</p>
-          <p class="p-monto">$1.400.000 <small>IVA incluido</small></p>
-          <p class="p-det"><strong>Tarjeta de crédito para pago en cuotas</strong> (las cuotas que tú necesites):</p>
+          <p class="p-label">Tarjeta de crédito (Flow)</p>
+          <p class="p-det"><strong>Ingreso Avanza — $1.800.000</strong>, en cuotas con tu tarjeta de crédito a través de Flow.</p>
           <a class="btn btn-warm" style="margin-top:14px" href="https://www.flow.cl/btn.php?token=l6d37064ee56423b97fe24906c0f9caa5112c8b9" target="_blank" rel="noopener">Pagar con tarjeta vía Flow</a>
-          <p class="p-det" style="margin-top:14px">O bien <strong>dos pagos de $700.000</strong> cada uno, a la cuenta corriente de la Opción 1.</p>
         </div>
       </div>
 
@@ -421,7 +531,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
   <section class="cierre" aria-label="Cierre">
     <div class="wrap">
       <h2>Reserva tu implementación</h2>
-      <p style="margin:10px 0 22px">Transfiere o paga con tarjeta vía Flow y respóndenos con el comprobante. Dentro de 5 días: <strong>$1.100.000 en 2 pagos de $550.000</strong>.</p>
+      <p style="margin:10px 0 22px">Transfiere o paga con tarjeta vía Flow y respóndenos con el comprobante. Ingreso Smart dentro de 5 días: <strong>$1.530.000 en 2 pagos de $765.000</strong>, con todos los aceleradores de rendimiento incluidos.</p>
       <a class="btn" href="#pago">Ir a los medios de pago</a>
     </div>
   </section>
